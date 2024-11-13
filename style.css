@@ -1,6 +1,12 @@
+head{
+    background-color: aliceblue;
+}
+
 body{
-    background-color: #DAEAF4;
+    /* background-color: #DAEAF4; */
+    background-image: url("assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+
 }
