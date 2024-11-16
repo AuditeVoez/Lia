@@ -1,12 +1,48 @@
-head{
-    background-color: aliceblue;
+body{
+    background: repeating-radial-gradient(circle, #0e0e32,#1d1b4c,#211f6a) no-repeat center center fixed;
 }
 
-body{
-    /* background-color: #DAEAF4; */
-    background-image: url("assets/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
 
+.margin{
+    margin-top: 8px;
+    margin-bottom: -8px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+h1.title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+}
+.subtitle{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+}
+.paragraph{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 12px;
+    padding-left: 16px;
+}
+.image{
+    float: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 12px;
+    width: 20%;
+    height: 20%;
+}
+div.box{
+    background-color: rgb(141, 139, 201, 0.5);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px;
+    background-size: cover;
 }
