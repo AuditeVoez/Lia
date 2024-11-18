@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f0f0, #d0d0d0);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Position relative for absolute positioning of the background */
+}
+
+nav ul li a {
+    color: #fff; /* Default text color */
+    text-decoration: none;
+    transition: transform 0.2s;
+    padding: 10px 15px; /* Add some padding for the clickable area */
+    position: relative; /* Position relative for the background */
+}
+
+/* Background color cycling for the border */
+@keyframes colorCycle {
+    0% { background-color: #8c3741; color: #fff; }
+    33% { background-color: #c2b7a9; color: #000; } /* Change text color to black */
+    66% { background-color: #477674; color: #fff; }
+    100% { background-color: #8c3741; color: #fff; }
+}
+
+nav ul li a:hover {
+    animation: colorCycle 3s infinite; /* Apply the color cycling animation */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Pseudo-element for background */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px; /* Rounded corners */
+    z-index: -1; /* Place the background behind the text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover::before {
+    animation: colorCycle 3s infinite; /* Apply the color cycling animation */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
