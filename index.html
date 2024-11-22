@@ -1,56 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#topics">Topics</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#home">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="#topics">
+                Topics
+            </a>
+            <span
+                style="margin-left: auto; margin-right: auto; color: white; font-size: 1.5rem;">
+                Portfolio
+            </span>
+        </div>
 
-    <main>
-        <section id="home" class="card">
-            <h1>Welcome to My Website</h1>
-            <p>This is a brief introduction to my personal website.</p>
-        </section>
+        <div class="container">
+            <!-- About Me Card -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">About Me</h2>
+                    <p class="card-description">
+                        Hi there! I'm AuditeVoez an anime otaku who took up
+                        Computer Science with the goal of making inefficient
+                        websites and mobile applications more efficient! I am
+                        currently learning the C language, as well as HTML and
+                        CSS.
+                    </p>
+                </div>
+                <img alt="Ruka" class="profile" src="/assets/erika.png" />
+            </div>
 
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <p>Hi! I'm [Your Name]. I am passionate about [Your Interests]. This website is a space for me to share my thoughts and ideas.</p>
-        </section>
+            <!-- Hobbies Card -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Hobbies</h2>
+                    <p class="card-description">
+                        During my free time, I do a fair bit of gaming. I love
+                        playing competitve games like League of Legends, as well
+                        as story-driven games like Heaven Burns Red, Aokana,
+                        Wuthering Waves, and Baldur's Gate 3!
+                    </p>
+                </div>
+                <a href="https://heavenburnsred.yo-star.com/">
+                    <img alt="games" src="/assets/games.png" />
+                </a>
+            </div>
 
-        <section id="topics" class="card">
-            <h2>Topics of Interest</h2>
-            <ul>
-                <li>Topic 1</li>
-                <li>Topic 2</li>
-                <li>Topic 3</li>
-                <li>Topic 4</li>
-            </ul>
-        </section>
+            <!-- Favorite Music Card -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Favorite Music</h2>
+                    <p class="card-description">
+                        My music taste is mainly centered around Japanese music,
+                        with most of my favorite artists being indie J-Pop
+                        artists and Touhou doujin Circles. I also love listening
+                        to idol music, Vocaloid, and Visual Novel Music. Below
+                        are some of my favorite artists. Feel free to click on any of the images to listen to one of their songs!<br><hr>
+                    </p>
+                    <div class="album-images">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=ReJsfzGeIXE" target="_blank">
+                                <img alt="Yanaginagi"
+                                    src="assets/yanagi.png" />
+                                <p class="card-subtitle">Yanaginagi</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://youtu.be/ZOsYZJcQxrQ?si=eEhyKorlo_aP37Q5" target="_blank">
+                                <img alt="Fuling Cat Mark"
+                                    src="/assets/fcm.png" />
+                                <p class="card-subtitle">Fuling Cat Mark</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://youtu.be/8OrfjW5SqBs?si=wlVrZc5d7-oj5_KX" target="_blank">
+                                <img alt="HareTokiDoki"
+                                    src="assets/haretoki.png" />
+                                <p class="card-subtitle">HARETOKIDOKI</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <section id="topics" class="card">
-            <h2>Topics of Interest</h2>
-            <ul>
-                <li>Topic 1</li>
-                <li>Topic 2</li>
-                <li>Topic 3</li>
-                <li>Topic 4</li>
-            </ul>
-        </section>
-    </main>
+            <!-- Favorite Anime Characters Card -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Favorite Anime Characters</h2>
+                    <p class="card-description">
+                        As previously stated, I am a big fan of anime. Below are some of my favorite anime characters. Feel free to click on any of their images to be redirected to a youtube video about them! 
+                    </p>
+                    <div class="album-images">
+                        <div>
+                            <a href="your-link-here.html" target="_blank">
+                                <img alt="Naruto Uzumaki"
+                                    src="" />
+                                <p class="card-subtitle">Naruto Uzumaki</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="your-link-here.html" target="_blank">
+                                <img alt="Goku"
+                                    src="" />
+                                <p class="card-subtitle">Goku</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="your-link-here.html" target="_blank">
+                                <img alt="Luffy"
+                                    src="" />
+                                <p class="card-subtitle">Luffy</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
-    </footer>
-</body>
+        <footer>
+            Dedicated to Aoi. Heaven Burns Red
+        </footer>
+    </body>
 </html>
