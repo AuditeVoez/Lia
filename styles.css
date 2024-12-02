@@ -124,10 +124,10 @@ body {
   text-decoration-line: none;
   position: relative;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
   margin-right: 2rem;
-  display:inline-flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: 2rem;
@@ -142,7 +142,7 @@ body {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-.card-description ul li{
+.card-description ul li {
   list-style-type: georgian;
 }
 .album-images {
@@ -190,15 +190,16 @@ footer {
   padding: 1rem;
 }
 
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .navbar a {
     padding: 0.5rem 0;
   }
+
   .card {
     flex-direction: column;
     width: 100%;
